@@ -1,38 +1,91 @@
-h1,
-div {
-    object-position: center;
-    text-align: center;
-    margin: 10px;
-    display: block;
-    font-family: Ubuntu;
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color:#555;
+    font-family: 'Ubuntu', 'Kosugi Maru', 'Arial', sans-serif;
     font-weight: 500;
-    margin-bottom: 50px;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    text-align: center;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.5)), url(img/mainback.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    color:#2ecc71;
+    font-size:150%;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    padding-top: 10px;
+
+}
+
+h2 {
+    color: #fff;
+    margin: 10px 5px;
+    font-size: 200%;
+}
+
+h1:after {
+    display:block;
+    height: 2px;
+    background-color:#2ecc71;
+    content: " ";
+    width: 500px;
+    margin: 5px auto;
+}
+
+section {
+    padding: 10px;
+    background-color:#2ecc71;
+}
+
+#start_button {
+    padding: 20px;
+}
+
+.randomizer {
+    background-color:#2ecc71;
+    border-radius: 200px;
+    padding: 6px 14px;
+    border: 2px solid #2ecc71;
+    transition: background-color 0.2s, border 0.2s;
+    font-family: 'Ubuntu', 'Kosugi Maru';
+    font-size: 100%;
+}
+
+.randomizer:hover {
+    background-color:#22a759;
+    border:2px solid #22a759;
 }
 
 #img_city {
-    display: none;
+    visibility: hidden;
 }
 
 #name_city {
-    display: none;
+    visibility: hidden;
 }
 
-
-.Name {
-    font-size: 50px;
-}
-
-button {
-    font-family: Ubuntu;
-    height: 25px;
-    width: 250px;
-    margin-top: 50px;
-}
-
-.img {
-    text-align: center;
-    object-position: center;
-}
 
 img {
     height: 300px;
@@ -40,7 +93,32 @@ img {
 }
 
 img:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
     transition: transform 0.2s;
 }
+
+.save_list {
+    list-style-type: none;
+    max-width: 1140px;
+    margin: 0 auto;
+    float: none;
+}
+
+li {
+    float:left;
+    width: 20%;
+    margin-bottom: 25px;
+}
+
+.save_img {
+    width: 75px;
+    height:auto;
+    object-position: center;
+}
+
+.save_item_text {
+    font-size:80%;
+    color: white;
+}
+
 
